@@ -1,0 +1,82 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  top: 0;
+  left: 0;
+}
+.header {
+  height: 13vh;
+  background-color: #222121;
+}
+.title h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: 800;
+  padding-top: 30px;
+}
+
+.section-5 {
+  padding: 40px;
+  /* padding-top: 80px; */
+  margin: 20px;
+}
+.section-5-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 28px;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  color: rgb(13, 194, 201);
+}
+.section-5-subtitle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 38px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #000;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+.section-5-content {
+  display: flex;
+  gap: 10px;
+  /* padding: 10px; */
+  margin: px;
+  color: #000;
+  /* align-items: center;
+    justify-content: center;
+    */
+}
+.section-5-leaders {
+  justify-content: space-between;
+  align-items: center;
+}
+.section-5-leaders img {
+  justify-content: center;
+  align-items: center;
+}
+.section-5-leaders h3 {
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto";
+  padding-top: 5px;
+  margin: 5px;
+  line-height: 26px;
+}
+.section-5-leaders h4 {
+  font-size: 16px;
+  font-family: "Montserrat";
+  padding-top: 5px;
+  text-align: center;
+  color: rgb(13, 194, 201);
+  margin: 5px;
+}

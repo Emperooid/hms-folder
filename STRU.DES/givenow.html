@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../ASSET/givenow.css" />
+  </head>
+  <body>
+
+    <script id="replace_with_navbar" src="../app java/app.js"></script>
+    <div class="section-1">
+      <div class="section-a">
+        <div class="logo">
+          <img
+            width="140px"
+            src="../IMAGES/1000383091-removebg-preview.png"
+            alt="church logo"
+          />
+          <h3>
+            <span style="color: rgb(13, 194, 201)">H.M.S</span> <br /><span
+              style="color: rgb(13, 194, 201)"
+              >LIGHTHOUSE</span
+            >
+          </h3>
+        </div>
+        <div class="section-a-image">
+          <img
+            style="width: 250px; height: 200px"
+            src="../IMAGES/view-cartoon-character-shopping.png"
+            alt=""
+          />
+        </div>
+        <h2>Online Giving</h2>
+        <p>
+          And God is able to make all grace [every favor and earthly blessing]
+          come in abundance to you, so that you may always [under all
+          circumstances, regardless of the need] have complete sufficiency in
+          everything [being completely self-sufficient in Him], and have an
+          abundance for every good work and act of charity
+        </p>
+        <h3 class="word">-2 Corinthians 9:8</h3>
+      </div>
+
+      <div class="section-b">
+        <div class="form-header">
+          <h3>
+            Fill the form below to give online or click <a href="#">here</a> to view account details
+          </h3>
+        </div>
+
+        <form class="section-b-form">
+          <div class="form-group">
+            <label for="first-name">First name *</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last name *</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone-number">Phone number *</label>
+            <input type="tel" id="phone-number" name="phone-number" required />
+          </div>
+          <div class="form-group">
+            <label for="currency">Currency *</label>
+            <select id="currency" name="currency" required>
+              <option value="NGN">NGN (₦)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="donation-type">Donation type *</label>
+            <select id="donation-type" name="donation-type" required>
+              <option value="tithe">Tithe</option>
+              <option value="offering">Offering</option>
+              <option value="seed">Seed</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount *</label>
+            <input type="number" id="amount" name="amount" required />
+          </div>
+          <div class="form-group btn-group">
+            <button type="button" class="cancel-btn">Cancel</button>
+            <input type="submit" value="Give" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

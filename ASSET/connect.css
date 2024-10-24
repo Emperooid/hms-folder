@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=MonteCarlo&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", "Montserrat", "Great Vibes", "Source Code Pro",
+    "Kaushan Script", sans-serif;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+.head {
+  height: 0vh;
+  background-color: transparent;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background: url("../IMAGES/soccer-fans-cheering-team-monochrome.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.connect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.section-1 {
+  /* text-align: center;
+  background-color: #003366;
+  color: white;
+
+  border-radius: 10px;
+  margin: 90px auto;
+  width: 80%; */
+  background-color: #0046ad;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  width: 80%;
+  max-width: 900px;
+  margin-top: 5%;
+  margin-left: 19%;
+  margin-bottom: 5%;
+}
+.section-1 p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.card-container {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cards a img {
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7; */
+  width: 100%;
+  height: auto;
+}
+.cards {
+  /* background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative; */
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  width: 45%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cards-text {
+  position: relative;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.information h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.information h3{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #333;
+}
+.information a{
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #051070d5;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.information a:hover{
+    border:  1px solid #fff;
+    background-color: #0046ad;
+}
+
+
+
+
+
+/* For screens with a maximum width of 1200px */
+@media (max-width: 1200px) {
+  .header {
+    height: 60vh;
+  }
+  .connect {
+    font-size: 1.5rem;
+  }
+  .section-1 {
+    width: 80%;
+  }
+  .cards {
+    width: 40%;
+  }
+}
+
+/* For screens with a maximum width of 992px */
+@media (max-width: 992px) {
+  .header {
+    height: 50vh;
+  }
+  .connect {
+    font-size: 1.2rem;
+  }
+  .section-1 {
+    width: 70%;
+  }
+  .cards {
+    width: 35%;
+  }
+}
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .header {
+    height: 40vh;
+  }
+  .connect {
+    font-size: 1rem;
+  }
+  .section-1 {
+    width: 60%;
+  }
+  .cards {
+    width: 30%;
+  }
+}
+
+/* For screens with a maximum width of 576px */
+@media (max-width: 576px) {
+  .header {
+    height: 30vh;
+  }
+  .connect {
+    font-size: 0.8rem;
+  }
+  .section-1 {
+    width: 50%;
+  }
+  .cards {
+    width: 25%;
+  }
+}
+
+/* For screens with a maximum width of 480px */
+@media (max-width: 480px) {
+  .header {
+    height: 20vh;
+  }
+  .connect {
+    font-size: 0.6rem;
+  }
+  .section-1 {
+    width: 40%;
+  }
+  .cards {
+    width: 20%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #f0f0f5;
+    padding: 40px 20px;
+    color: #333;
+    text-align: center;
+  }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+    align-items: center;
+  }
+  .footer .column {
+    flex: 1;
+    /* min-width: 200px; */
+    margin: 10px;
+    line-height: 2;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .column h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .footer .column ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer .column ul li {
+    margin-bottom: 10px;
+  }
+  .footer .column ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  .footer .column a {
+    text-decoration: none;
+    color: #333;
+  }
+  .footer .column ul li a:hover {
+    text-decoration: underline;
+  }
+  .footer .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  .footer .newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  .footer .social-icons {
+    margin-top: 20px;
+  }
+  .footer .social-icons a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .footer .social-icons a:hover {
+    color: #555;
+  }
+  
+  .footer .ender-scope {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .logo {
+    margin-top: 20px;
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .logo img {
+    max-width: 100px;
+  }
+  .footer .logo p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(27, 129, 27);
+    font-weight: bold;
+  }
+  .footer .copyright {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  

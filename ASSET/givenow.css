@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=MonteCarlo&display=swap");
+
+*body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.section-1 {
+    display: flex;
+    margin: 200px;
+    margin-top: 20px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  /* background-color: #f7f7f7;
+  display: flex;
+  
+  align-items: flex-start;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px; 
+  border-radius: 10px;
+  margin: 30px auto;
+  width: 80%; */
+}
+.section-1.section-a {
+  display: flex;
+  margin: 30px;
+  width: 50%;
+  background-color: rgb(1, 17, 17);
+}
+.logo {
+  display: flex;
+}
+.section-a-image img {
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin-bottom: 20px;
+}
+.section-a h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.section-a p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  width: 50%;
+}
+.section-a .word {
+  font-style: italic;
+  font-size: 16px;
+}
+.section-b {
+  width: 100%;
+  margin: 30px;
+}
+.section-b-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+.section-b .form-header {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  color: #f7f7f7;
+
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section-b .form-header a {
+  color: #f0ad4e;
+  text-decoration: none;
+}
+.section-b .form-header a:hover{
+    text-decoration: underline;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.form-group input[type="submit"] {
+    background-color: #f0ad4e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #ec971f;
+}
+.form-group .cancel-btn {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.form-group .cancel-btn:hover {
+    background-color: #5a6268;
+}
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=MonteCarlo&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", "Montserrat", "Great Vibes", "Source Code Pro",
+    "Kaushan Script", sans-serif;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+.header {
+  height: 13vh;
+  background-color: rgba(0, 0, 27, 0.685);
+}
+.section-1 {
+  background: url(../IMAGES/light-beam-crowd-people.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  width: 100%;
+  height: 67vh;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 67vh;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.event {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  color: #f7f7f7;
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
+.event h1{
+    animation: bounce 3s ease-in 0.5s 1 normal none;
+}
+@keyframes bounce{
+    
+        0% {
+          transform: translateY(-300px);
+        }
+        25% {
+          transform: translateY(-40px);
+        }
+        30% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-30px);
+        }
+        55% {
+          transform: translateY(0);
+        }
+        75% {
+          transform: translateY(-20px);
+        }
+        80% {
+          transform: translateY(0);
+        }
+        90% {
+          transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0px);
+          }
+      
+}
+.event p{
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.section-2-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: -moz-linear-gradient(136deg, rgb(224,195,252) 0%, rgb(142,197,252) 100%);
+}
+  
+  .wrapper{
+    position: relative;
+    height: 550px;
+    width: 750px;
+}
+.wrapper .img{
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.wrapper .img img{
+   
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    clip-path: circle(0% at 0% 100%);
+    transition: all 0.7s;
+}
+
+#one:checked ~ .img-1 img{
+    clip-path: circle(150% at 0% 100%);
+}
+
+#two:checked ~ .img-1 img,
+#two:checked ~ .img-2 img{
+    clip-path: circle(150% at 0% 100%);
+}
+#three:checked ~ .img-1 img,
+#three:checked ~ .img-2 img,
+#three:checked ~ .img-3 img{
+    clip-path: circle(150% at 0% 100%);
+}
+#four:checked ~ .img-1 img,
+#four:checked ~ .img-2 img,
+#four:checked ~ .img-3 img,
+#four:checked ~ .img-4 img{
+    clip-path: circle(150% at 0% 100%);
+}
+#five:checked ~ .img-1 img,
+#five:checked ~ .img-2 img,
+#five:checked ~ .img-3 img,
+#five:checked ~ .img-4 img,
+#five:checked ~ .img-5 img{
+    clip-path: circle(150% at 0% 100%);
+}
+
+.wrapper .sliders{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: flex;
+}
+.wrapper .sliders label{
+    height: 15px;
+    width: 13px;
+    border: 2px solid rgb(142,197,252);
+    margin: 0 3px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+#one:checked ~ .sliders label.one,
+#two:checked ~ .sliders label.two,
+#three:checked ~ .sliders label.three,
+#four:checked ~ .sliders label.four,
+#five:checked ~ .sliders label.five{
+    width: 35px;
+    border-radius: 14px;
+
+    background:  rgb(142,197,252);
+}
+
+.sliders label:hover{
+    background-color: rgb(142,197,252);
+}
+.wrapper input[type="radio"]{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #f0f0f5;
+    padding: 40px 20px;
+    color: #333;
+    text-align: center;
+  }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    align-items: center;
+  }
+  .footer .column {
+    flex: 1;
+    /* min-width: 200px; */
+    margin: 10px;
+    line-height: 2;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .column h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .footer .column ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer .column ul li {
+    margin-bottom: 10px;
+  }
+  .footer .column ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  .footer .column a {
+    text-decoration: none;
+    color: #333;
+  }
+  .footer .column ul li a:hover {
+    text-decoration: underline;
+  }
+  .footer .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  .footer .newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  .footer .social-icons {
+    margin-top: 20px;
+  }
+  .footer .social-icons a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .footer .social-icons a:hover {
+    color: #555;
+  }
+  
+  .footer .ender-scope {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .logo {
+    margin-top: 20px;
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .logo img {
+    max-width: 100px;
+  }
+  .footer .logo p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(27, 129, 27);
+    font-weight: bold;
+  }
+  .footer .copyright {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+
+
+
+
+
+
+
+
+
+  
+  

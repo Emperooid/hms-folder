@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=MonteCarlo&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", "Montserrat", "Great Vibes", "Source Code Pro",
+    "Kaushan Script", sans-serif;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+.header {
+  height: 0vh;
+  background-color: transparent;
+}
+.section-1 {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  height: 400px;
+  overflow: hidden;
+}
+.section-1 video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+.section-1 .section-1-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.section-1-content p {
+  padding-top: 1px;
+  font-size: 24px;
+  margin: 10px 0px;
+}
+.section-1-content h1 {
+  font-size: 40px;
+  padding: 5px;
+  word-spacing: 8;
+  margin: 0px;
+  margin-top: 40px;
+  width: 48%;
+  justify-content: center;
+  text-align: justify;
+  line-height: 1.4;
+}
+.section-2 h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: rgb(1, 1, 43);
+  color: #333;
+}
+.section-2-i {
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  color: #666;
+  justify-content: center;
+  align-items: center;
+}
+.section-2-i p {
+  padding-top: 30px;
+  justify-content: center;
+  font-size: 24px;
+  align-items: center;
+  width: 80%;
+  text-align: justify;
+}
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.section-3-header {
+  font-size: 20px;
+  color: rgb(13, 194, 201);
+  font-family: "Kaushan Script";
+}
+.section-3-subheader {
+  font-family: "Roboto";
+}
+.section-3-content {
+  display: flex;
+  padding: 40px;
+  margin: 10px;
+}
+.section-3-cards {
+  background-color: rgb(7, 7, 39);
+  gap: 30px;
+  padding: 20px;
+  margin: 40px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.section-3-cards h3 {
+  text-align: center;
+  font-size: 24px;
+  color: rgb(13, 194, 201);
+  padding-bottom: 10px;
+  font-family: "Kaushan Script";
+}
+.section-3-cards h2 {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-family: "Kaushan Script";
+}
+.section-3-cards p {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 5px;
+  font-family: "Roboto";
+}
+
+.section-5 {
+  padding: 40px;
+  /* padding-top: 80px; */
+  margin: 60px;
+  margin-top: 20px;
+}
+.section-5-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 28px;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  color: rgb(13, 194, 201);
+}
+.section-5-subtitle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 38px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #000;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+.section-5-content {
+  display: flex;
+  gap: 10px;
+  /* padding: 10px; */
+  margin: px;
+  color: #000;
+  /* align-items: center;
+    justify-content: center;
+    */
+}
+.section-5-leaders {
+  justify-content: space-between;
+  align-items: center;
+}
+.section-5-leaders img {
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.section-5-leaders h3 {
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto";
+  padding-top: 5px;
+  margin: 5px;
+  line-height: 26px;
+}
+.section-5-leaders h4 {
+  font-size: 16px;
+  font-family: "Montserrat";
+  padding-top: 5px;
+  text-align: center;
+  color: rgb(13, 194, 201);
+  margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #f0f0f5;
+  padding: 40px 20px;
+  color: #333;
+  text-align: center;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  align-items: center;
+}
+.footer .column {
+  flex: 1;
+  /* min-width: 200px; */
+  margin: 10px;
+  line-height: 2;
+  align-items: center;
+  justify-content: center;
+}
+.footer .column h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.footer .column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .column ul li {
+  margin-bottom: 10px;
+}
+.footer .column ul li a {
+  color: #333;
+  text-decoration: none;
+}
+.footer .column a {
+  text-decoration: none;
+  color: #333;
+}
+.footer .column ul li a:hover {
+  text-decoration: underline;
+}
+.footer .newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .newsletter input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+.footer .newsletter button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.footer .social-icons {
+  margin-top: 20px;
+}
+.footer .social-icons a {
+  color: #333;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.footer .social-icons a:hover {
+  color: #555;
+}
+
+.footer .ender-scope {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .logo {
+  margin-top: 20px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.footer .logo img {
+  max-width: 100px;
+}
+.footer .logo p {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(27, 129, 27);
+  font-weight: bold;
+}
+.footer .copyright {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+
+

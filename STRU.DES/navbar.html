@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../ASSET/navbar.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../STRU.DES/connect.html" />
+    <link rel="stylesheet" href="../STRU.DES/give.html" />
+    <link rel="stylesheet" href="../STRU.DES/index.html" />
+    <link rel="stylesheet" href="../STRU.DES/location.html" />
+    <link rel="stylesheet" href="../STRU.DES/media.html" />
+    <link rel="stylesheet" href="../STRU.DES/ourhistory.html" />
+    <link rel="stylesheet" href="../STRU.DES/navbar.html" />
+    <link rel="stylesheet" href="../STRU.DES/home.html" />
+
+</head>
+<body>
+    <script id="replace_with_navbar" src="../app java/app.js"></script>
+    <a id="top"></a>
+    
+    <nav class="heading">
+      <div class="logo">
+        <img
+          width="140px"
+          src="../IMAGES/1000383091-removebg-preview.png"
+          alt="church logo"
+        />
+        <h3>
+          <span style="color: rgb(13, 194, 201)">H.M.S</span> <br /><span
+            style="color: rgb(13, 194, 201)"
+            >LIGHTHOUSE</span
+          >
+        </h3>
+      </div>
+      
+      <div class="navigation">
+        <ul>
+          <li><a href="../STRU.DES/home.html">HOME</a></li>
+          <li><a href="../STRU.DES/connect.html">CONNECT</a></li>
+          <li>
+            <div class="dropdown">
+              <a class="dropbtn" href="#">
+                ABOUT US<i class="ri-arrow-down-s-fill"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="../STRU.DES/whoweare.html">WHO WE ARE</a>
+                <a href="../STRU.DES/navbar.html">OUR HISTORY</a>
+                <a href="#">BANDS</a>
+                <a href="../STRU.DES/ministries.html">MINISTRIES</a>
+                <!-- <a href="#">RESOURCES</a> -->
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="dropbtn" href="STRU.DES\media.html"
+                >MEDIA<i class="ri-arrow-down-s-fill"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="../STRU.DES/livestream.html">LIVESTREAM</a>
+                <a href="../STRU.DES/gallery.html">PHOTO GALLERY</a>
+                <!-- <a href="#">LIBRARY</a> -->
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="dropbtn" href="#">
+                INFORMATION DESK<i class="ri-arrow-down-s-fill"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="../STRU.DES/annoucement.html">ANNOUNCEMENT</a>
+                <a href="../STRU.DES/confession.html">CONFESSION</a>
+                <!-- <a href="#">FORMS</a> -->
+                <!-- <a href="#">COUNSELLING</a> -->
+                <a href="../STRU.DES/firsttimer.html">FIRST TIMER</a>
+                <!-- <a href="#">MARRIAGE ENRICHMENT</a> -->
+                <a href="../STRU.DES/contactus.html">CONTACT US</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="dropbtn" href="#"
+                >QUICK LINKS<i class="ri-arrow-down-s-fill"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="../STRU.DES/upcomingevent.html">UPCOMING EVENTS</a>
+                <!-- <a href="#">SPECIAL PRAYERS</a>  -->
+                <!--  MIC PRAYERS LIKE THOSE TIKTIOK SHORT CLIPS -->
+                <a href="../STRU.DES/location.html">LOCATION</a>
+                <!-- <a href="#">WORSHIP GUIDE</a> -->
+                <a href="../STRU.DES/givenow.html"> SIMPLE WAYS TO GIVE</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div style="display: none;" class="hamburger" onclick="toggleMenu()">
+        &#9776;
+        <!-- Hamburger icon -->
+      </div>
+
+
+
+    <script src="../app java/app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://translae.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((text) => {
+          let oldelem = document.querySelector("script#replace_with_navbar");
+          let newelem = document.createElement("div");
+          newelem.innerHTML = text;
+          oldelem.parentNode.replaceChild(newelem, oldelem);
+        });
+
+      function toggleMenu() {
+        var navbar = document.getElementById("navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=MonteCarlo&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", "Montserrat", "Great Vibes", "Source Code Pro",
+    "Kaushan Script", sans-serif;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+.header {
+  height: 13vh;
+  background-color: #222121;
+}
+.title h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: 800;
+  padding-top: 30px;
+}
+
+.section-1 {
+  padding: 40px;
+  /* padding-top: 80px; */
+  margin: 20px;
+}
+.section-1-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 28px;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  color: rgb(13, 194, 201);
+}
+.section-1-subtitle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 38px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #000;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+.section-1-content {
+  display: flex;
+  gap: 10px;
+  /* padding: 10px; */
+  margin: px;
+  color: #000;
+  /* align-items: center;
+      justify-content: center;
+      */
+}
+.section-1-leaders {
+  justify-content: space-between;
+  align-items: center;
+}
+.section-1-leaders img {
+  justify-content: center;
+  align-items: center;
+}
+.section-1-leaders h3 {
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto";
+  padding-top: 5px;
+  margin: 5px;
+  line-height: 26px;
+  width: 80%;
+}
+.section-1-leaders h4 {
+  font-size: 16px;
+  font-family: "Montserrat";
+  padding-top: 5px;
+  text-align: center;
+  color: rgb(13, 194, 201);
+  margin: 5px;
+  width: 80%;
+}
+.section-2 {
+  display: flex;
+  animation: slideInleft 3s ease-in 0.9s 1 normal none;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2 h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 28px;
+  animation: slideInRight 2s ease-in 0.5s 1 normal none;
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* .animated-word.animate{
+    animation: animate 2s ease-in-out 0.5s 1 normal none;
+  } */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  height: 100vh;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery div {
+  position: relative;
+}
+.gallery div a img:hover {
+  background-color: #000000c2;
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}

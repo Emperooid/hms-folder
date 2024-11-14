@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../ASSET/navbar.css" />
     <link
@@ -17,12 +17,19 @@
     <link rel="stylesheet" href="../STRU.DES/ourhistory.html" />
     <link rel="stylesheet" href="../STRU.DES/navbar.html" />
     <link rel="stylesheet" href="../STRU.DES/home.html" />
-
-</head>
-<body>
+  </head>
+  <body>
     <script id="replace_with_navbar" src="../app java/app.js"></script>
+    <script>
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      const nav = document.querySelector(".nav");
+
+      hamburgerMenu.addEventListener("click", () => {
+        nav.classList.toggle("active"); // Toggle the active class to show/hide the nav
+      });
+    </script>
     <a id="top"></a>
-    
+
     <nav class="heading">
       <div class="logo">
         <img
@@ -37,8 +44,8 @@
           >
         </h3>
       </div>
-      
-      <div class="navigation">
+
+      <div class="navigation nav">
         <ul>
           <li><a href="../STRU.DES/home.html">HOME</a></li>
           <li><a href="../STRU.DES/connect.html">CONNECT</a></li>
@@ -49,7 +56,7 @@
               ></a>
               <div class="dropdown-content">
                 <a href="../STRU.DES/whoweare.html">WHO WE ARE</a>
-                <a href="../STRU.DES/navbar.html">OUR HISTORY</a>
+                <a href="../STRU.DES/ourhistory.html">OUR HISTORY</a>
                 <a href="#">BANDS</a>
                 <a href="../STRU.DES/ministries.html">MINISTRIES</a>
                 <!-- <a href="#">RESOURCES</a> -->
@@ -103,12 +110,7 @@
       </div>
     </nav>
 
-    <div style="display: none;" class="hamburger" onclick="toggleMenu()">
-        &#9776;
-        <!-- Hamburger icon -->
-      </div>
-
-
+    <!-- <span class="hamburger-menu material-symbols-outlined">menu</span> -->
 
     <script src="../app java/app.js"></script>
     <script
@@ -128,7 +130,14 @@
       function toggleMenu() {
         var navbar = document.getElementById("navbar");
         navbar.classList.toggle("active");
+
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".nav");
+
+        hamburger.addEventListener("click", () => {
+          navigation.classList.toggle("active"); // Toggle the active class to show/hide the nav
+        });
       }
     </script>
-</body>
+  </body>
 </html>

@@ -115,3 +115,41 @@ fetch("navbar.html")
 function toggleMenu() {
   document.getElementById("navbar").classList.toggle("active");
 }
+
+
+
+
+
+
+
+const hamburger = document.querySelector(".hamburger");
+const navigation = document.querySelector(".navigation");
+
+hamburger.addEventListener("click", () => {
+  navigation.classList.toggle("active"); // Toggle the active class to show/hide the nav
+});
+
+
+ function sendForm() {
+        const form = document.getElementById("contact-form");
+        const formData = new FormData(form);
+
+        fetch("https://formspree.io/f/mnnqdgke", {
+            method: "POST",
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                alert("Message sent successfully!");
+                form.reset(); // Clear the form fields after submission
+            } else {
+                alert("Failed to send message. Please try again.");
+            }
+        })
+        .catch(error => {
+            alert("An error occurred. Please try again later.");
+        });
+    }

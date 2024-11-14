@@ -2363,3 +2363,367 @@ body {
     width: 100%;
   }
 }
+@media (max-width: 912px) {
+  .section-1 {
+    height: 90vh;
+  }
+  .overlay {
+    height: 90vh;
+    width: 100%;
+  }
+  .welcome {
+    margin-top: 10%;
+  }
+  .welcome h2 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .welcome h3 {
+    font-size: 40px;
+    font-weight: 300;
+  }
+  .bible {
+    font-size: 40px;
+  }
+  .description {
+    font-size: 24px;
+  }
+
+  .timer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  .timer-content {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding-left: 5px;
+  }
+  .countdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 14fr);
+  }
+  .countdown div {
+    pad: 8px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    padding-right: 140px !important;
+  }
+  .countdown div small {
+    font-size: 24px;
+    text-align: center;
+  }
+  .countdown div span {
+   padding-bottom: 20px;
+    padding-left: 40px;
+  }
+  .event-button {
+    padding: 8px 15px;
+    font-size: 30px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .button {
+    padding-top: 20px;
+    padding-left: 0px !important;
+    margin-left: 190px;
+    align-items: center;
+    justify-content: center;
+  }
+  .event-button:hover {
+    font-weight: bold;
+    background-color: rgb(13, 194, 201);
+  }
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    height: 80vh;
+    padding: 5px;
+    margin-bottom: 360px !important;
+  }
+  .section-2-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .section-2-a {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .section-2-a p {
+    font-size: 50px !important;
+    padding: 10px;
+  }
+  .section-2-a h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .section-2-a h4 {
+    font-size: 30px;
+  }
+  .section-2-a h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+  }
+  .socials h5 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .icon {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 40px;
+    gap: 60px;
+  }
+  .section-2-b {
+    margin: auto;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+  }
+  .section-2-b iframe {
+    width: 100px !important;
+    height: 260px !important;
+    margin: 0px !important;
+    padding-left: 0 !important;
+  }
+  .section-3 {
+    margin-top: 50px;
+  }
+  .section-3-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+  }
+  .wrapper {
+    position: relative;
+    height: 500px !important;
+    width: 650px !important;
+  }
+  .section-3 div h1 {
+    font-size: 40px;
+    color: #333;
+  }
+  .section-4 {
+    padding-top: 40px;
+  }
+  .section-4-header {
+    font-size: 38px;
+  }
+  .section-4-subheader {
+    font-size: 26px;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+  }
+  .section-4-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+  .section-4-cards {
+    background-color: rgb(7, 7, 39);
+    gap: 30px;
+    padding: 100px;
+    margin: 10px;
+    color: #fff;
+  
+  }
+  .section-4-cards h3{
+    font-size: 50px;
+  }
+  .section-4-cards h2{
+    font-size: 70px;
+  }
+  .section-4-cards p{
+    font-size: 40px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0;
+    height: 30vh;
+    margin: auto !important;
+    margin-bottom: 0px !important;
+  }
+  .fj {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 24px;
+  }
+  .gallery div img {
+    width: 150px;
+    height: 100px;
+    margin: 0px !important;
+  }
+  .section-5 {
+    padding: 10px;
+    margin: 10px;
+    margin-top: 30px;
+  }
+  .section-5-subtitle {
+    font-size: 60px;
+    font-weight: 300;
+  }
+  .section-5-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section-5-leaders {
+    margin: auto !important;
+  }
+  .section-5-leaders img {
+    width: 650px !important;
+    height: 50vh !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: auto;
+    margin-left: 30px;
+  }
+  .section-5-leaders h3 {
+    font-size: 16px;
+  }
+  .section-6 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .section-6-a-content {
+    word-spacing: 1.2;
+    padding-left: 5px;
+  }
+  .section-6-a-content p {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .section-6-a-content h2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  .section-6-a-content h3 {
+    word-spacing: 2px;
+    font-size: 30px;
+  }
+  .section-6-b {
+    margin: 0px !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-6-b img {
+    width: 690px !important;
+    height: 500px !important;
+  }
+  .section-7-content h1 {
+    font-size: 40px;
+  }
+  .section-7-socials {
+    font-size: 28px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 85%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+  }
+  .contact-form textarea {
+    padding: 15px !important;
+  }
+  .contact-form button {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 26px;
+    margin: 10px;
+  }
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    padding: 6.4%;
+    flex-direction: column;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .subscribe-form h1 {
+    font-size: 26px;
+  }
+  .subscribe-form div {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-form input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .subscribe-form button {
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    width: 40%;
+    margin-left: 80px;
+  }
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .footer .column {
+    flex: none;
+    text-align: left;
+  }
+  .footer .column h3 {
+    font-size: 31px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .footer .social-icons {
+    margin-top: 10px;
+  }
+  .footer ul li a{
+    font-size: 30px;
+  }
+  .footer .social-icons a {
+    font-size: 40px;
+  }
+  .footer .ender-scope {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .logo {
+    margin-top: 10px;
+  }
+  .footer .logo img {
+    max-width: 90px;
+  }
+  .footer .logo p {
+    width: 100%;
+    font-size: 20px;
+  }
+  .footer .copyright {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 100%;
+  }
+}
